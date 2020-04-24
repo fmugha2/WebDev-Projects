@@ -1,0 +1,198 @@
+:root {
+  --red: #ea1c2c;
+  --pink: #f498b8;
+  --purple: rgb(222, 192, 222);
+}
+
+body {
+  background: #f5d9df;
+  font-family: "Nunito", sans-serif;
+}
+
+.blurb h2 {
+  color: var(--red);
+  font-weight: 100;
+  font-size: 2.5rem;
+}
+
+.blurb p {
+  color: var(--pink);
+  font-weight: 100;
+  font-size: 1.125rem;
+  line-height: 2;
+}
+
+.content {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#spring-text {
+  color: orange;
+  padding-left: 10%;
+  font-weight: bold;
+  letter-spacing: 0.7rem;
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-size: 1.3vw;
+  top: 80%;
+}
+
+.row align-items-center {
+  overflow: hidden;
+}
+
+#mainNavbar {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+#mainNavbar .nav-link {
+  color: #fff;
+}
+
+#mainNavbar .nav-link:hover {
+  color: #ea1c2c;
+}
+
+#mainNavbar .navbar-brand {
+  color: #ea1c2c;
+
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+#heading-group span {
+  color: var(--red);
+}
+
+#heading-group h1 {
+  font-weight: 100;
+  font-size: 4rem;
+}
+
+#home-heading {
+  position: relative;
+  min-height: 200px;
+  background: url("imgs/bg.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+}
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.navbar-brand {
+  font-weight: 400;
+}
+
+.navbar.scrolled {
+  background-color: var(--purple);
+  transition: background 500ms;
+}
+
+footer {
+  text-align: center;
+  color: #fff;
+}
+
+/* TEST */
+
+.img-text-wrapper {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.img-text-wrapper .subtitle {
+  transition: 0.2s;
+  color: transparent;
+}
+
+.image-blur {
+  transition: 1s;
+  filter: brightness(40%);
+}
+
+.img-text-wrapper:hover .subtitle {
+  color: white;
+  font-weight: 600;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 1200px) {
+  #heading-group h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #main-img {
+    content: url("imgs/krewe-spring2.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #main-img {
+    content: url("imgs/krewe-spring2.jpg");
+  }
+}
+@media (min-width: 769px) {
+  #main-img {
+    content: url("imgs/krewe-spring-full2.jpg");
+  }
+}
+@media (min-width: 1200px) {
+  #main-img {
+    content: url("imgs/krewe-spring-full2.jpg");
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #home {
+    content: url("imgs/krewe-at-home2.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #home {
+    content: url("imgs/krewe-at-home2.jpg");
+  }
+}
+@media (min-width: 769px) {
+  #home {
+    content: url("imgs/krewe-at-home.jpg");
+  }
+}
+@media (min-width: 1200px) {
+  #home {
+    content: url("imgs/krewe-at-home.jpg");
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #block-message {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+}
